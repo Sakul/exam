@@ -80,7 +80,7 @@ kill -9 ENTER_PID_HERE
 ## ลอง Call API จาก VS Code (REST Client)
 1. ติดตั้ง [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) ใน Visual Studio Code ซะ  
 2. สร้างไฟล์ใน VS Code แล้วเซฟเป็นนามสกุล .http
-3. เอา Code ไปใส่ในไฟล์ที่สร้าง แล้วลองกด **Send Request** แต่ละอันดู
+3. เอา Code ไปใส่ในไฟล์ที่สร้าง แล้วลองกด **Send Request** แต่ละอันดู (แก้ URL ให้เป็นของตัวเองด้วย)
 ```
 GET http://node17.codenvy.io:48411/api/Values
 ###
