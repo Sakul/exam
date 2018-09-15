@@ -90,8 +90,8 @@ kill -9 PID
 ![img](images/terminal.png)  
 
 ---
-# เรื่องอื่นๆ (กำลังทำ)
+# เรื่องอื่นๆ
 * [Web API](web-api.md)
-* [Ionic](#)
-* [TDD](#)
-* [Git](#)
+* Ionic (กำลังทำ)
+* TDD (กำลังทำ)
+* Git (กำลังทำ)
