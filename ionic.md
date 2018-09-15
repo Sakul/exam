@@ -86,9 +86,8 @@ import { HttpClient } from '@angular/common/http';
 constructor(public http: HttpClient) {
 }
 ```
-ตัวอย่าง
+ตัวอย่าง - GET
 ```
-// GET
 this.http.get<YOUR_MODEL_NAME_HERE>("ENTER_YOUR_API_HERE").subscribe(
     it => {
         // SUCCESS: Do something
@@ -96,8 +95,9 @@ this.http.get<YOUR_MODEL_NAME_HERE>("ENTER_YOUR_API_HERE").subscribe(
     error => {
         // ERROR: Do something
     });
-
-// POST
+```
+ตัวอย่าง - POST
+```
 this.http.post<YOUR_MODEL_NAME>("ENTER_YOUR_API_HERE",
     {
         PROPERTY_NAME_1: VALUE_1,
@@ -109,8 +109,9 @@ this.http.post<YOUR_MODEL_NAME>("ENTER_YOUR_API_HERE",
         error => {
             // ERROR: Do something
         });
-
-// PUT
+```
+ตัวอย่าง - PUT
+```
 this.http.put<YOUR_MODEL_NAME>("ENTER_YOUR_API_HERE",
     {
         PROPERTY_NAME_1: VALUE_1,
@@ -122,8 +123,9 @@ this.http.put<YOUR_MODEL_NAME>("ENTER_YOUR_API_HERE",
         error => {
             // ERROR: Do something
         });
-
-// DELETE
+```
+ตัวอย่าง - DELETE
+```
 this.http.delete<YOUR_MODEL_NAME>("ENTER_YOUR_API_HERE").subscribe(
     it => {
         // SUCCESS: Do something
@@ -139,3 +141,5 @@ https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE
 ```
 > chs: ขนาดรูป 250 x 250 (เปลี่ยนเอา)
 > chl: ข้อความที่จะส่งไปสร้างเป็น QR
+
+![img](https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE)
