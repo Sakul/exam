@@ -55,8 +55,8 @@ public void Configure(IApplicationBuilder app)
 dotnet run
 ```
 > ต้องอยู่ใน folder webapi แล้ว  
-![img](images\api04.PNG)  
-![img](images\api05.PNG)  
+![img](images/api04.PNG)  
+![img](images/api05.PNG)  
 
 ## ปิด process
 ```
@@ -64,14 +64,14 @@ dotnet run
 ```
 
 ## กรณี dotnet run ไม่ได้เพราะโดน lock process  
-![img](images\api01.PNG)  
+![img](images/api01.PNG)  
 ใช้คำสั่งด้านล่าง - เพื่อลิสต์รายการ process ทั้งหมดที่ run อยู่
 ```
 ps -a
 ```
-![img](images\api02.PNG)  
+![img](images/api02.PNG)  
 ใช้คำสั่งด้านล่าง - เพื่อ terminate process นั้นๆออก (โดยใส่ PID)  
-![img](images\api03.PNG)  
 ```
 kill -9 ENTER_PID_HERE
 ```
+![img](images/api03.PNG)  
