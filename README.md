@@ -2,7 +2,7 @@
 ### การสร้าง workspace  
 ![img](images/workspace01.PNG)  
 ![img](images/workspace02.PNG)  
-### การตั้งค่า port และ Agents
+### การตั้งค่า Ports และ Agents
 ![img](images/workspace03.PNG)  
 ![img](images/workspace04.PNG)  
 ![img](images/workspace05.PNG)  
@@ -24,8 +24,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install dotnet-sdk-2.1
-* ขั้นตอนสุดท้ายมันจะถาม Y/n ด้วย ให้กด y แล้วกด Enter
 ```
+> ขั้นตอนสุดท้ายมันจะถาม Y/n ให้กดปุ่ม **Enter** ได้เลย *(ส่วนตัวชอบใส่ y แล้วค่อยกดปุ่ม Enter)*
+
 # ตรวจสอบเวอร์ชันหลังลงเสร็จ
 ```
 ionic --version
@@ -40,12 +41,12 @@ dotnet --version
 ![img](images/workspace10.PNG)  
 
 ### กรณีที่ dotnet ได้เป็นตัว preview (ไม่เจอให้ข้าม ทำบุญมาดีแล้ว)
-* ให้ลบ workspace นั้นๆออกเลย แล้วทำใหม่ตั้งแต่ต้น
+ให้ลบ workspace นั้นๆออกเลย แล้วทำใหม่ตั้งแต่ต้น (ขั้นตอนการลบอยู่ในรูปถัดไป)
 ![img](images/workspace03.PNG)  
 ![img](images/workspace11.PNG)  
 
 # ข้อแนะนำ (ไม่ทำก็ได้ **แต่เตือนแล้วนะ**)
-* หลังจากทำทุกอย่างเสร็จแล้วควรปิดเครื่องซะ - มันจะได้เซฟทุกอย่างไว้ก่อน
+* หลังจากทำขั้นตอนด้านบนเสร็จหมดในครั้งแรกควร **ปิดเครื่อง** - มันจะได้เซฟทุกอย่างไว้ก่อน
 * ถ้ารู้ว่าจะไม่ได้ใช้เครื่องนานๆและต้องการจะเซฟของในเครื่องไว้ให้ปิดเครื่องด้วย
 
 # ปิดเครื่อง
@@ -53,6 +54,11 @@ dotnet --version
 
 # เปิดเครื่อง
 ![img](images/vm02.png)  
+
+# การแชร์ workspace
+![img](images/workspace03.PNG)  
+![img](images/workspace12.PNG)  
+![img](images/workspace13.PNG)  
 
 ---
 # เรื่องอื่นๆ (กำลังทำ)
