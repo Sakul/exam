@@ -1,3 +1,9 @@
+# เรื่องอื่นๆ
+* [Web API](web-api.md)
+* [Ionic](ionic.md)
+* [Git](git.md)
+* TDD (กำลังทำ)
+---
 # [Codenvy.io](https://codenvy.io/dashboard/#)
 ### การสร้าง workspace  
 ![img](images/workspace01.PNG)  
@@ -88,10 +94,3 @@ kill -9 PID
 
 # เปิด terminal หลายๆตัว
 ![img](images/terminal.png)  
-
----
-# เรื่องอื่นๆ
-* [Web API](web-api.md)
-* [Ionic](ionic.md)
-* TDD (กำลังทำ)
-* [Git](git.md)
