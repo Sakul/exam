@@ -7,7 +7,7 @@ dotnet new webapi -n demoapi
 > **demoapi** คือชื่อโปรเจคและจะได้ folder ชื่อนั้นด้วย *(ไม่เปลี่ยนก็แล้วแต่ - เตือนแล้วนะ)*
 
 ## เปิด Port 5000
-Program.cs
+**Program.cs**
 ```
 public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
@@ -15,8 +15,8 @@ public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
                 .UseStartup<Startup>();
 ```
 
-## การเปิด [CORS](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-2.1)
-Program.cs
+## [การเปิด CORS](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-2.1)
+**Program.cs**
 ```
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
@@ -30,7 +30,7 @@ dotnet add package Swashbuckle.AspNetCore
 ```
 > ต้องอยู่ใน folder webapi แล้ว
 
-Startup.cs
+**Startup.cs**
 ```
 using Swashbuckle.AspNetCore.Swagger;
 ```
@@ -55,6 +55,7 @@ public void Configure(IApplicationBuilder app)
 dotnet run
 ```
 > ต้องอยู่ใน folder webapi แล้ว  
+
 ![img](images/api04.PNG)  
 ![img](images/api05.PNG)  
 
@@ -76,7 +77,7 @@ kill -9 ENTER_PID_HERE
 ```
 ![img](images/api03.PNG)  
 
-## ลอง Call API จาก VS Code
+## ลอง Call API จาก VS Code (REST Client)
 1. ติดตั้ง [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) ใน Visual Studio Code ซะ  
 2. สร้างไฟล์ใน VS Code แล้วเซฟเป็นนามสกุล .http
 3. เอา Code ไปใส่ในไฟล์ที่สร้าง แล้วลองกด **Send Request** แต่ละอันดู
