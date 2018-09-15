@@ -60,6 +60,35 @@ dotnet --version
 ![img](images/workspace12.PNG)  
 ![img](images/workspace13.PNG)  
 
+# Command line (สำหรับ Linux)
+เคลียหน้าจอ
+```
+clear
+```
+ออกจาก folder 1 step
+```
+cd ..
+```
+เข้าไปยัง path ที่กำหนด
+```
+cd PATH_TO_GO
+```
+ดูรายชื่อไฟล์+folder
+```
+dir
+```
+ดู process ทั้งหมด
+```
+ps -a
+```
+ทำลาย process
+```
+kill -9 PID
+```
+
+# เปิด terminal หลายๆตัว
+![img](images/terminal.png)  
+
 ---
 # เรื่องอื่นๆ (กำลังทำ)
 * [Web API](web-api.md)
