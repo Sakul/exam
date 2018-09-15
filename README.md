@@ -1,1 +1,18 @@
-# exam
+# [Ionic framework](https://ionicframework.com/getting-started#cli)  
+### Install Ionic CLI
+```
+sudo npm install -g ionic
+```
+
+# [.NET Core SDK - Ubuntu 14.04](https://www.microsoft.com/net/download/linux-package-manager/ubuntu14-04/sdk-current)
+### Register Microsoft key and feed
+```
+wget -q https://packages.microsoft.com/config/ubuntu/14.04/packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+```
+### Install .NET SDK
+```
+sudo apt-get install apt-transport-https
+sudo apt-get update
+sudo apt-get install dotnet-sdk-2.1
+```
