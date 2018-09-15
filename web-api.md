@@ -75,3 +75,32 @@ ps -a
 kill -9 ENTER_PID_HERE
 ```
 ![img](images/api03.PNG)  
+
+## ลอง Call API จาก VS Code
+1. ติดตั้ง [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) ใน Visual Studio Code ซะ  
+2. สร้างไฟล์ใน VS Code แล้วเซฟเป็นนามสกุล .http
+3. เอา Code ไปใส่ในไฟล์ที่สร้าง แล้วลองกด **Send Request** แต่ละอันดู
+```
+GET http://node17.codenvy.io:48411/api/Values
+###
+
+GET http://node17.codenvy.io:48411/api/Values/123
+
+###
+
+POST http://node17.codenvy.io:48411/api/Values
+Content-Type: application/json
+
+"YOUR_TEXT_HERE"
+
+###
+
+PUT http://node17.codenvy.io:48411/api/Values/123
+Content-Type: application/json
+
+"YOUR_TEXT_HERE"
+
+###
+
+DELETE http://node17.codenvy.io:48411/api/Values/123
+```
