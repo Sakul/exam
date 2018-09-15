@@ -92,6 +92,6 @@ kill -9 PID
 ---
 # เรื่องอื่นๆ
 * [Web API](web-api.md)
-* Ionic (กำลังทำ)
+* [Ionic](ionic.md)
 * TDD (กำลังทำ)
 * Git (กำลังทำ)
