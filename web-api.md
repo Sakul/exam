@@ -20,7 +20,7 @@ public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
 ```
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
-    app.UseCors(builder => builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader());
+    app.UseCors(builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 }
 ```
 
