@@ -1,5 +1,10 @@
 # Git
 
+## การ logout git ที่อยู่ในเครื่อง
+Windows 10 กดปุ่ม Windows แล้วพิมพ์ credential manager *(พิมพ์แค่บางส่วนก็พอ)*  
+![img](images/git01.png)  
+![img](images/git02.png)  
+
 ## Clone Git repository
 ```
 git clone ENTER_YOUR_GIT_URL_HERE
