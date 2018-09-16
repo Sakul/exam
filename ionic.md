@@ -136,6 +136,91 @@ this.http.delete<YOUR_MODEL_NAME>("ENTER_YOUR_API_HERE").subscribe(
 
 ```
 
+## Code example
+**TypeScript**
+```
+export class HelloIonicPage {
+
+  data1: number = 5;
+  data2: number = 9;
+  result: number;
+
+  Add() {
+    this.data1 = +this.data1;
+    this.data2 = +this.data2;
+    this.result = this.data1 + this.data2;
+  }
+
+  studentCollection: Student[];
+
+  createDataCollection() {
+    this.studentCollection = [
+      { id: 1, name: "a" },
+      { id: 2, name: "b" },
+      { id: 3, name: "c" },
+    ];
+  }
+
+  removeStudent(selectedStudent: Student) {
+    var index = this.studentCollection.indexOf(selectedStudent);
+    if (index > -1) {
+      this.studentCollection.splice(index, 1);
+    }
+  }
+
+  addAStudent() {
+    if (!this.studentCollection) return;
+    var newStudent = new Student();
+    newStudent.id = this.studentCollection.length + 1;
+    newStudent.name = "NEW-STUDENT";
+    this.studentCollection.push(newStudent);
+  }
+
+}
+
+export class Student {
+  public id: number;
+  public name: string;
+}
+```
+**Page**
+```
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Input 1</ion-label>
+      <ion-input type="name" [(ngModel)]="data1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Input 2</ion-label>
+      <ion-input type="name" [(ngModel)]="data2"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="Add()">+</button>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Result</ion-label>
+      <ion-label fixed>{{result}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <button ion-button (click)="createDataCollection()">Create new collection</button>
+      <button ion-button (click)="addAStudent()">Add new student</button>
+    </ion-item>
+    <ion-item *ngIf="!studentCollection">
+      studentCollection is undefined
+    </ion-item>
+    <ion-item *ngFor="let it of studentCollection" (click)="removeStudent(it)">
+      <ion-label fixed>ID: {{ it.id }}</ion-label>
+      <ion-label fixed>NAME: {{ it.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+```
+![img](images/ionic02.PNG)   
+
 ## Google's QR
 ```
 https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE
