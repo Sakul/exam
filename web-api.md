@@ -55,7 +55,7 @@ public void Configure(IApplicationBuilder app)
 dotnet run
 ```
 > ต้องอยู่ใน folder webapi แล้ว  
-
+![img](images/workspace03.PNG)  
 ![img](images/api04.PNG)  
 ![img](images/api05.PNG)  
 
