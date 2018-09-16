@@ -21,12 +21,13 @@ dotnet test
 ## Packages
 ```
 dotnet add package moq
+dotnet add package Newtonsoft.Json
 dotnet add package fluentassertions
 ```
 > ต้องอยู่ใน folder xunit project แล้ว  
 
-
-## [Sample code](https://xunit.github.io/docs/getting-started-dotnet-core)
+---
+# [Xunit](https://xunit.github.io/docs/getting-started-dotnet-core)
 **Fact**
 ```
 [Fact]
@@ -48,4 +49,42 @@ public void PassingTest(int input1, int input2, int expectedResult)
 }
 
 public int Add(int x, int y) => x + y;
+```
+---
+# [Fluentassertions](https://fluentassertions.com/examples)
+```
+string actual = "ABCDEFGHI";
+actual.Should().StartWith("AB").And.EndWith("HI").And.Contain("EF").And.HaveLength(9);
+```
+```
+IEnumerable numbers = new[] { 1, 2, 3 };
+numbers.Should().HaveCount(4, "because we thought we put four items in the collection"))
+```
+---
+# [Moq](https://github.com/Moq/moq4/wiki/Quickstart)
+```
+public interface ISomething
+{
+    void DoSomething();
+    int GetSomething();
+    int GetSomethingById(int id);
+}
+```
+```
+using Moq;
+```
+```
+var moq = new MockRepository(MockBehavior.Default);
+var somethingMock = moq.Create<ISomething>();
+
+// Setup
+somethingMock.Setup(it => it.GetSomething()).Returns(99);
+somethingMock.Setup(it => it.GetSomethingById(It.IsAny<int>())).Returns<int>(it => 88);
+
+ISomething obj = somethingMock.Object;
+var result = obj.GetSomethingById(7); // result: 88
+
+// Verify
+somethingMock.Verify(it => it.DoSomething(), Times.Never(), "Error message 1");
+somethingMock.Verify(it => it.GetSomethingById(It.Is<int>(actual => actual == 7)), Times.Once(), "Error message 2");
 ```
