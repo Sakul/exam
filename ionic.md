@@ -136,7 +136,56 @@ this.http.delete<YOUR_MODEL_NAME>("ENTER_YOUR_API_HERE").subscribe(
 
 ```
 
-## Code example
+## Google's QR
+```
+https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE
+```
+> chs: ขนาดรูป 250 x 250 (เปลี่ยนเอา)  
+> chl: ข้อความที่จะส่งไปสร้างเป็น QR  
+
+![img](https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE)
+
+---
+
+## Example
+![img](images/ionic02.PNG)   
+**Page**
+```
+<ion-content padding>
+  <img src="https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE" />
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Input 1</ion-label>
+      <ion-input type="name" [(ngModel)]="data1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Input 2</ion-label>
+      <ion-input type="name" [(ngModel)]="data2"></ion-input>
+    </ion-item>
+    <ion-item>
+      <button ion-button (click)="Add()">+</button>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Result</ion-label>
+      <ion-label fixed>{{result}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item>
+      <button ion-button (click)="createDataCollection()">Create new collection</button>
+      <button ion-button (click)="addAStudent()">Add new student</button>
+    </ion-item>
+    <ion-item *ngIf="!studentCollection">
+      studentCollection is undefined
+    </ion-item>
+    <ion-item *ngFor="let it of studentCollection" (click)="removeStudent(it)">
+      <ion-label fixed>ID: {{ it.id }}</ion-label>
+      <ion-label fixed>NAME: {{ it.name }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+```
 **TypeScript**
 ```
 export class HelloIonicPage {
@@ -183,49 +232,3 @@ export class Student {
   public name: string;
 }
 ```
-**Page**
-```
-<ion-content padding>
-  <ion-list>
-    <ion-item>
-      <ion-label fixed>Input 1</ion-label>
-      <ion-input type="name" [(ngModel)]="data1"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label fixed>Input 2</ion-label>
-      <ion-input type="name" [(ngModel)]="data2"></ion-input>
-    </ion-item>
-    <ion-item>
-      <button ion-button (click)="Add()">+</button>
-    </ion-item>
-    <ion-item>
-      <ion-label fixed>Result</ion-label>
-      <ion-label fixed>{{result}}</ion-label>
-    </ion-item>
-  </ion-list>
-
-  <ion-list>
-    <ion-item>
-      <button ion-button (click)="createDataCollection()">Create new collection</button>
-      <button ion-button (click)="addAStudent()">Add new student</button>
-    </ion-item>
-    <ion-item *ngIf="!studentCollection">
-      studentCollection is undefined
-    </ion-item>
-    <ion-item *ngFor="let it of studentCollection" (click)="removeStudent(it)">
-      <ion-label fixed>ID: {{ it.id }}</ion-label>
-      <ion-label fixed>NAME: {{ it.name }}</ion-label>
-    </ion-item>
-  </ion-list>
-</ion-content>
-```
-![img](images/ionic02.PNG)   
-
-## Google's QR
-```
-https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE
-```
-> chs: ขนาดรูป 250 x 250 (เปลี่ยนเอา)  
-> chl: ข้อความที่จะส่งไปสร้างเป็น QR  
-
-![img](https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE)
