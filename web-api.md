@@ -16,7 +16,7 @@ public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
 ```
 
 ## [การเปิด CORS](https://docs.microsoft.com/en-us/aspnet/core/security/cors?view=aspnetcore-2.1)
-**Program.cs**
+**Startup.cs**
 ```
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
