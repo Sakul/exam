@@ -6,6 +6,7 @@ Windows 10 กดปุ่ม Windows แล้วพิมพ์ credential man
 ![img](images/git02.png)  
 
 ## Git ignore
+กรณียังไม่มีไฟล์ **.gitignore** ให้ใช้คำสั่งด้านล่าง (ถ้ามีแล้วไป copy code ด้านล่าง)
 ```
 copy NUL .gitignore
 ```
