@@ -52,10 +52,12 @@ public int Add(int x, int y) => x + y;
 ```
 ---
 # [Fluentassertions](https://fluentassertions.com/examples)
+**Example 1**
 ```
 string actual = "ABCDEFGHI";
 actual.Should().StartWith("AB").And.EndWith("HI").And.Contain("EF").And.HaveLength(9);
 ```
+**Example 2**
 ```
 IEnumerable numbers = new[] { 1, 2, 3 };
 numbers.Should().HaveCount(4, "because we thought we put four items in the collection"))
@@ -85,6 +87,6 @@ ISomething obj = somethingMock.Object;
 var result = obj.GetSomethingById(7); // result: 88
 
 // Verify
-somethingMock.Verify(it => it.DoSomething(), Times.Never(), "Error message 1");
-somethingMock.Verify(it => it.GetSomethingById(It.Is<int>(actual => actual == 7)), Times.Once(), "Error message 2");
+somethingMock.Verify(it => it.DoSomething(), Times.Never(), "Error msg 1");
+somethingMock.Verify(it => it.GetSomethingById(It.Is<int>(actual => actual == 7)), Times.Once(), "Error msg 2");
 ```
