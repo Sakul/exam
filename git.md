@@ -5,6 +5,14 @@ Windows 10 กดปุ่ม Windows แล้วพิมพ์ credential man
 ![img](images/git01.png)  
 ![img](images/git02.png)  
 
+## [ตั้งค่าต่างๆ](https://help.github.com/categories/setup)
+```
+git config user.name "ENTER_YOUR_NAME_HERE"
+git config user.email "ENTER_YOUR_EMAIL_HERE"
+```
+> ถ้าต้องการให้เป็น global ให้ต่อด้วย *--global*  
+> ตัวอย่าง: git config --global user.name "sakul"
+
 ## Clone Git repository
 ```
 git clone ENTER_YOUR_GIT_URL_HERE
