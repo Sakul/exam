@@ -9,7 +9,7 @@ Windows 10 กดปุ่ม Windows แล้วพิมพ์ credential man
 ```
 copy NUL .gitignore
 ```
-> Copy code จาก [ลิงค์นี้](.gitignore) ไปใส่ในไฟล์ **.gitignore**
+> Copy code จาก [ลิงค์นี้](https://raw.githubusercontent.com/Sakul/exam/master/.gitignore) ไปใส่ในไฟล์ **.gitignore**
 
 
 ## [ตั้งค่าต่างๆ](https://help.github.com/categories/setup)
