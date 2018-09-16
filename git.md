@@ -5,6 +5,13 @@ Windows 10 กดปุ่ม Windows แล้วพิมพ์ credential man
 ![img](images/git01.png)  
 ![img](images/git02.png)  
 
+## Git ignore
+```
+copy NUL .gitignore
+```
+> Copy code จาก [ลิงค์นี้](.gitignore) ไปใส่ในไฟล์ **.gitignore**
+
+
 ## [ตั้งค่าต่างๆ](https://help.github.com/categories/setup)
 ```
 git config user.name "ENTER_YOUR_NAME_HERE"
