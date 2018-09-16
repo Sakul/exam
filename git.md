@@ -1,5 +1,8 @@
 # Git
 
+## [สร้าง Git repository](https://github.com/new)
+![img](images/git03.png)  
+
 ## การ logout git ที่อยู่ในเครื่อง
 Windows 10 กดปุ่ม Windows แล้วพิมพ์ credential manager *(พิมพ์แค่บางส่วนก็พอ)*  
 ![img](images/git01.png)  
@@ -22,6 +25,7 @@ git config user.email "ENTER_YOUR_EMAIL_HERE"
 > ตัวอย่าง: git config --global user.name "sakul"
 
 ## Clone Git repository
+![img](images/git04.png)  
 ```
 git clone ENTER_YOUR_GIT_URL_HERE
 ```

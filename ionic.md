@@ -12,6 +12,7 @@ ionic serve
 ```
 > ต้องอยู่ใน folder ionic project แล้ว  
 
+![img](images/workspace03.PNG) 
 ![img](images/ionic01.png)   
 
 ## เพิ่มหน้าใหม่
