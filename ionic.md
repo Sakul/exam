@@ -139,7 +139,7 @@ this.http.delete<YOUR_MODEL_NAME>("ENTER_YOUR_API_HERE").subscribe(
 ```
 https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE
 ```
-> chs: ขนาดรูป 250 x 250 (เปลี่ยนเอา)
-> chl: ข้อความที่จะส่งไปสร้างเป็น QR
+> chs: ขนาดรูป 250 x 250 (เปลี่ยนเอา)  
+> chl: ข้อความที่จะส่งไปสร้างเป็น QR  
 
 ![img](https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=YOUR_TEXT_HERE)
