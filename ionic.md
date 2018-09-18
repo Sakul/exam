@@ -15,6 +15,8 @@ ionic serve
 ![img](images/workspace03.PNG) 
 ![img](images/ionic01.png)   
 
+## [Ionic Components](https://ionicframework.com/docs/components)
+
 ## เพิ่มหน้าใหม่
 ```
 ionic g page YOUR_PAGENAME_HERE
